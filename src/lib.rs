@@ -7,7 +7,7 @@ pub fn add_two(x: i32) -> i32 {
 
 pub fn fetch_an_integer() -> redis::RedisResult<isize> {
     // connect to redis
-    let client = try!(redis::Client::open("redis://127.0.0.1/"));
+    let client = try!(redis::Client::open("redis://redis/"));
     let con = try!(client.get_connection());
     // throw away the result, just make sure it does not fail
     let _: () = try!(con.set("my_key", 42));
