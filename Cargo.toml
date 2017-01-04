@@ -6,3 +6,6 @@ authors = ["adrianbrink <adrian@brink-holdings.com>"]
 [dependencies]
 redis = "0.8.0"
 postgres = "0.13.4"
+
+[dev-dependencies]
+diesel_cli = "0.9.0"
